@@ -1,0 +1,16 @@
+{
+  "name": "first-telegram-bot",
+  "version": "1.0.0",
+  "description": "This is my First Telegram bot created for practice",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "node-telegram-bot-api": "^0.64.0"
+  }
+}
