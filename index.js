@@ -1,5 +1,6 @@
 const telegramBot = require('node-telegram-bot-api');
-const API = 'SECRET KEY';
+const dotenv = require('dotenv');
+const API = dotenv.SECRET_KEY;
 
 const bot = new telegramBot(API,{polling:true});
 
