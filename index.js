@@ -48,8 +48,9 @@ bot.onText(/\/start/, (msg) => {
         bot.kickChatMember(msg.chat.id,  msg.from.id);
         }
         
+
         });
-    
+    /
 
 
 
