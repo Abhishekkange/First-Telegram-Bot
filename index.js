@@ -2,7 +2,24 @@ const telegramBot = require('node-telegram-bot-api');
 
 const API = "6303358546:AAF76kR69yBbtpvJKc52ku-no0NhRtmm52o"
 
+const webLink = "https://celebrated-torte-184681.netlify.app/";
+
 const bot = new telegramBot(API,{polling:true});
+
+bot.onText(/\/startup/, (msg) => {
+    bot.sendMessage(msg.chat.id, 'Welcome :)))))', {
+      reply_markup: {
+        inline_keyboard: [
+          [
+            {
+              text: 'Open Web App',
+              url: webLink
+            }
+          ]
+        ]
+      }
+    });
+  });
 
 bot.onText(/\/start/, (msg) => {
 
@@ -50,7 +67,9 @@ bot.onText(/\/start/, (msg) => {
         
 
         });
-    /
+
+        const web_link = "https://celebrated-torte-184681.netlify.app/";
+
 
 
 
