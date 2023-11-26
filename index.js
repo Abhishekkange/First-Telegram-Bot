@@ -54,6 +54,7 @@ bot.onText(/\/start/, (msg) => {
         if (msg.text.indexOf(location) === 0) {
             bot.sendLocation(msg.chat.id,44.97108, -104.27719);
             bot.sendMessage(msg.chat.id, "Here is the point");
+            console.log(msg.chat.first_name);
     
         }
     });
